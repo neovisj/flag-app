@@ -59,7 +59,24 @@
   color: inherit;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width:1000px) {
+  h1 {
+    padding: 10px;
+  }
+
+ .navbar-content-wrapper {
+  max-width: 700px;
+  height: 100%;
+ }
+}
+
+@media screen and (max-width:405px){
+  .navbar-content-wrapper {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
   .Navbar {
     font-size: 10px;
     display: flex;
@@ -80,6 +97,7 @@
   justify-content: center;
   align-items: center;
   gap: 13px;
+  height: 100%;
 }
 
 .button-mode-container {
