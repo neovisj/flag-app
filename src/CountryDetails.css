@@ -10,7 +10,7 @@
 }
 
 .country-details-container img {
-  width: 500px;
+  width: 100%;
 }
 
 .back-button {
@@ -79,7 +79,7 @@
 
 .details-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2rem;
 }
 
