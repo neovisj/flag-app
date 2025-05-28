@@ -1,0 +1,142 @@
+.country-details-container {
+  padding: 2rem;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark .country-details-container {
+  color: white;
+}
+
+.country-details-container img {
+  width: 500px;
+}
+
+.back-button {
+  margin-bottom: 150px;
+  padding: 18px;
+  background-color: transparent;
+  border: 2px #202c36;
+  cursor: pointer;
+  border-radius: 4px;
+  color: black;
+  width: 100px;
+  font-size: 15px;
+}
+
+.dark .back-button {
+  color: white;
+}
+
+.back-button:hover {
+  background-color: #b5b6b7;
+  transition: 0.5s;
+}
+
+.dark .back-button:hover {
+  background-color: #202C36;
+  transition: 0.5s;
+}
+
+.borders-section {
+  margin-top: 1rem;
+}
+
+.borders-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.borders-list button {
+  padding: 10px 20px;
+  background-color: rgb(135, 133, 133);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.dark .borders-list button {
+  padding: 10px 20px;
+  background-color: #202C36;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.borders-list button:hover {
+  background-color: #425361;
+  transition: 0.5s;
+}
+
+.dark .borders-list button:hover {
+  background-color: #414548;
+  transition: 0.5s;
+}
+
+.details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.flag {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.details-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-columns {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.column p {
+  margin: 7px;
+}
+
+@media (max-width:375px) {
+  .country-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+
+
+  .details-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-info {
+    flex: 1;
+  }
+
+  .flag {
+    max-width: 270px;
+  }
+
+  .details-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .back-button {
+    margin-bottom: 0px;
+
+  }
+
+  .details-info , h1 {
+    margin-top: 0px;
+  }
+
+}
