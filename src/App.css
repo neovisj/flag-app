@@ -1,0 +1,108 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px; /* om navbar är fixed */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.search-bar {
+  padding: 0.5rem;
+  margin: 1rem;
+  width: 300px;
+}
+
+.dark .search-bar {
+  border: 1px solid white;
+  color: white;
+}
+
+.region-filter {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.dark .region-filter {
+  border: 1px solid white;
+  color: white;
+}
+
+.country-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin-top: 10px; /* justera beroende på navbarhöjd */
+}
+
+.search-bar,
+.region-filter {
+  padding: 0.75rem 1rem;
+  max-width: 100%;
+  font-size: 1rem;
+  border: 1px solid #2b3844;
+  border-radius: 4px;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+  width: 200px;
+  background-color: transparent;
+  color: black;
+}
+
+.search-bar:focus,
+.region-filter:focus {
+  box-shadow: 0 0 0 2px #202c36;
+  border-color: #202c36;
+}
+
+.region-filter:focus {
+  border-color: black;
+  color: black;
+  background-color:white ;
+}
+
+.app {
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.dark {
+  background-color: #2b3844;
+  color: white;
+}
+.main-content,
+.container {
+  background-color: inherit;
+  color: inherit;
+}
+
+@media screen and (max-width:375px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dark-toggle {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
