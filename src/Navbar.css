@@ -89,19 +89,23 @@
   }
   
   .nav-logo {
-  width: 80px;
+  display: none;
 }
 
 .navbar-content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 13px;
+  gap: 100px;
   height: 100%;
 }
 
 .button-mode-container {
   width: 89px;
+}
+
+h1 {
+  margin-bottom: 0px;
 }
 
 }

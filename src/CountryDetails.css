@@ -173,13 +173,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 0;
+    padding: 0;
   }
 
 
   .details-wrapper {
     flex-direction: column;
     align-items: center;
+    gap: unset;
+    width: 100%;
   }
 
   .details-info {

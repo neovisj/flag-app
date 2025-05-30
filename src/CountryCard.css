@@ -26,7 +26,6 @@
 
 .country-card img {
   width: 100%;
-  border-radius: 4px;
   height: 125px;
   object-fit: cover;
 }
@@ -48,4 +47,14 @@
     display:flex ;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:375px) {
+  .country-card {
+    width: 340px ;
+  }
+
+  .country-card img {
+    height:100%;
+  }
 }

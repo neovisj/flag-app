@@ -59,7 +59,6 @@
   border-radius: 4px;
   outline: none;
   transition: box-shadow 0.2s ease;
-  width: 200px;
   background-color: transparent;
   color: black;
 }
@@ -93,17 +92,6 @@
   color: inherit;
 }
 
-@media screen and (max-width:375px) {
-  .filters {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .dark-toggle {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 
 @media screen and (max-width:500px) {
     .filters {
@@ -116,7 +104,32 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0px;
   }
+
+  @media screen and (max-width:375px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    align-items: unset;
+  }
+
+  .dark-toggle {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .search-bar {
+    margin: 0px;
+  }
+
+  .region-filter {
+    width: unset ;
+  }
+}
+
 
 }
 
