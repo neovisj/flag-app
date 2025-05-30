@@ -76,7 +76,7 @@ function App() {
                           <CountryCard
                             key={country.name.common}
                             name={country.name.common}
-                            flag={country.flags.png}
+                            flag={country.flags.svg}
                             population={country.population}
                             region={country.region}
                             capital={country.capital?.[0] || "N/A"}
