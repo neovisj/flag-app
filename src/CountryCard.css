@@ -49,6 +49,21 @@
     align-items: center;
 }
 
+@media screen and (max-width:500px) {
+  .country-card {
+    width: 360px;
+    margin: 0px;
+  }
+
+    .country-card img {
+    height:100%;
+  }
+
+  .country-card-link {
+    margin: 0px;
+  }
+}
+
 @media screen and (max-width:375px) {
   .country-card {
     width: 340px ;

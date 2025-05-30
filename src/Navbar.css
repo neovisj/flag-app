@@ -70,9 +70,18 @@
  }
 }
 
-@media screen and (max-width:405px){
+@media screen and (max-width:500px){
   .navbar-content-wrapper {
     font-size: 10px;
+    margin: 0px 40px;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  h1 {
+    margin: 0px;
   }
 }
 

@@ -182,6 +182,7 @@
     align-items: center;
     gap: unset;
     width: 100%;
+    padding: 0.25rem;
   }
 
   .details-info {
@@ -189,7 +190,7 @@
   }
 
   .flag {
-    max-width: 270px;
+    max-width: 95%;
   }
 
   .details-columns {
