@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 import CountryCard from "./CountryCard";
 import CountryDetails from "./CountryDetails";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
