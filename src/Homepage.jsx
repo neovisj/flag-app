@@ -10,18 +10,26 @@ const Homepage = () => {
   const [loading, setLoading] = useState(true);
 
 
-  useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all")
-      .then((res) => res.json())
-      .then((data) => {
+useEffect(() => {
+  fetch("https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital,cca2")
+    .then((res) => {
+      if (!res.ok) throw new Error("API-fel: " + res.status);
+      return res.json();
+    })
+    .then((data) => {
+      if (Array.isArray(data)) {
         setCountries(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Något gick fel:", error);
-        setLoading(false);
-      });
-  }, []);
+      } else {
+        throw new Error("Svar var inte en array");
+      }
+      setLoading(false);
+    })
+    .catch((error) => {
+      console.error("Något gick fel:", error);
+      setCountries([]);
+      setLoading(false);
+    });
+}, []);
 
   return (
     <>
