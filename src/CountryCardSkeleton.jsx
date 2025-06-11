@@ -1,4 +1,4 @@
-import './CountryCard.css'; // Återanvänd stilfil
+import './CountryCard.css';
 
 const CountryCardSkeleton = () => {
   return (

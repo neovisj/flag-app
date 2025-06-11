@@ -3,7 +3,6 @@ import CountryCard from "./CountryCard";
 import "./App.css";
 import CountryCardSkeleton from "./countryCardSkeleton";
 
-
 const Homepage = () => {
   const [searchText, setSearchText] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("");
