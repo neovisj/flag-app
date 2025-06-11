@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import CountryCard from "./CountryCard";
-import "./App.css";
 import CountryCardSkeleton from "./countryCardSkeleton";
+
+import "./App.css";
 
 const Homepage = () => {
   const [searchText, setSearchText] = useState("");
