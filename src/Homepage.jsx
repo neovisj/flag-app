@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CountryCard from "./CountryCard";
 import "./App.css";
+import CountryCardSkeleton from "./countryCardSkeleton";
 
 
 const Homepage = () => {
@@ -17,6 +18,7 @@ useEffect(() => {
       return res.json();
     })
     .then((data) => {
+      setLoading(true)
       if (Array.isArray(data)) {
         setCountries(data);
       } else {
@@ -57,24 +59,30 @@ useEffect(() => {
       </div>
 
       <div className="country-list">
-        {countries
-          .filter((country) =>
-            country.name.common.toLowerCase().includes(searchText.toLowerCase())
-          )
-          .filter((country) =>
-            selectedRegion ? country.region === selectedRegion : true
-          )
-          .map((country) => (
-            <CountryCard
-              key={country.name.common}
-              name={country.name.common}
-              flag={country.flags.svg}
-              population={country.population}
-              region={country.region}
-              capital={country.capital?.[0] || "N/A"}
-              code={country.cca2}
-            />
-          ))}
+        {loading ? (
+    Array.from({ length: 12 }).map((_, index) => (
+      <CountryCardSkeleton key={index} />
+    ))
+  ) : (
+    countries
+      .filter((country) =>
+        country.name.common.toLowerCase().includes(searchText.toLowerCase())
+      )
+      .filter((country) =>
+        selectedRegion ? country.region === selectedRegion : true
+      )
+      .map((country) => (
+        <CountryCard
+          key={country.name.common}
+          name={country.name.common}
+          flag={country.flags.svg}
+          population={country.population}
+          region={country.region}
+          capital={country.capital?.[0] || "N/A"}
+          code={country.cca2}
+        />
+      ))
+  )}
       </div>
     </>
   );
