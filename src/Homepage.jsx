@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CountryCard from "./CountryCard";
-import CountryCardSkeleton from "./countryCardSkeleton";
+import CountryCardSkeleton from ".src/CountryCardSkeleton";
 
 import "./App.css";
 
