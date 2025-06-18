@@ -19,7 +19,7 @@ const CountryDetails = () => {
     <div className="country-details-container">
       <button onClick={() => navigate(-1)} className="back-button">
         {" "}
-        BACK
+        ← BACK
       </button>
 
       <div className="details-wrapper">

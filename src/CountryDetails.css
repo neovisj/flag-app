@@ -14,8 +14,8 @@
 }
 
 .back-button {
-  margin-bottom: 150px;
-  padding: 18px;
+  margin-bottom: 75px;
+  padding: 18px 18px 18px 0px;
   background-color: transparent;
   border: 2px #202c36;
   cursor: pointer;
@@ -50,30 +50,32 @@
 }
 
 .borders-list button {
-  padding: 10px 20px;
-  background-color: rgb(135, 133, 133);
+  padding: 10px 27px;
+background-color: #f2f2f2;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
   border: none;
-  border-radius: 15px;
+  border-radius: 7px;
   cursor: pointer;
-  color: white;
+  color: black;
+
 }
 
 .dark .borders-list button {
   padding: 10px 20px;
-  background-color: #202C36;
+  background-color: #20272e;
   border: none;
-  border-radius: 15px;
+  border-radius: 7px;
   cursor: pointer;
   color: white;
 }
 
 .borders-list button:hover {
-  background-color: #425361;
+  background-color: rgb(175, 175, 175);
   transition: 0.5s;
 }
 
 .dark .borders-list button:hover {
-  background-color: #414548;
+  background-color: #3b4655;
   transition: 0.5s;
 }
 
@@ -100,8 +102,14 @@
   gap: 2rem;
 }
 
+.details-columns p {
+  font-weight: 100;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
 .column p {
-  margin: 7px;
+  margin: 7px 7px 7px 0px;
 }
 
 
@@ -172,21 +180,25 @@
   .country-details-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 0;
   }
 
 
   .details-wrapper {
     flex-direction: column;
-    align-items: center;
     gap: unset;
-    width: 100%;
-    padding: 0.25rem;
+    padding: 0.75rem;
   }
 
   .details-info {
-    flex: 1;
+    width: 95%;
+    max-width: 560px;
+    margin-left: auto;
+  margin-right: auto;
+  }
+
+  .details-info h1 {
+    padding-left: 2px;
   }
 
   .flag {
@@ -197,9 +209,14 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .back-button {
-    margin-bottom: 0px;
+  .details-columns p {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
 
+  .back-button {
+    margin-bottom: 10px;
+    padding-left: 18px;
   }
 
   .details-info , h1 {

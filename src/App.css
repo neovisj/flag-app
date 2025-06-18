@@ -13,8 +13,8 @@
 
 .search-bar {
   padding: 0.5rem;
-  margin: 1rem;
   width: 300px;
+  margin-left: 5px;
 }
 
 .dark .search-bar {
@@ -63,6 +63,10 @@
   color: black;
 }
 
+.dark .search-bar:focus {
+  box-shadow: 0 0 0 2px  white;
+}
+
 .search-bar:focus,
 .region-filter:focus {
   box-shadow: 0 0 0 2px #202c36;
@@ -70,9 +74,12 @@
 }
 
 .region-filter:focus {
-  border-color: black;
-  color: black;
-  background-color:white ;
+   border-color: white;
+}
+
+.dark option {
+  color: white;
+  background-color: #202C36;
 }
 
 .app {
@@ -83,7 +90,7 @@
 }
 
 .dark {
-  background-color: #2b3844;
+  background-color: #202C36;
   color: white;
 }
 .main-content,

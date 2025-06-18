@@ -10,7 +10,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <div className="Navbar">
       <div className="navbar-content-wrapper">
         <Link to="/" className="logo">
-          <h1>Flag App</h1>
+          <h1>The Flag App</h1>
         </Link>
         <img
           className="nav-logo"
@@ -23,7 +23,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             onClick={() => setDarkMode((prev) => !prev)}
             className="dark-toggle"
           >
-            {darkMode ? "Light mode" : "Dark mode"}
+            {darkMode ? "⏾ DARK MODE" : "☀︎ LIGHT MODE"}
           </button>
         </div>
       </div>
