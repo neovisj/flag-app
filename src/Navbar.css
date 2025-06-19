@@ -89,6 +89,16 @@
   }
 }
 
+@media screen and (max-width: 430px) {
+  .navbar-content-wrapper h1 {
+    font-size: 15px;
+  }
+
+  .navbar-content-wrapper {
+    margin: 0px 7px ;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .Navbar {
     font-size: 10px;
@@ -124,6 +134,10 @@
 
 h1 {
   margin-bottom: 0px;
+}
+
+.dark-toggle {
+  padding: 0px;
 }
 
 }
