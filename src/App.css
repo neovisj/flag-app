@@ -103,11 +103,16 @@
 @media screen and (max-width:500px) {
     .filters {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
     padding: 0px;
     margin: 0px;
+    align-items: unset;
+    width: 365px;
+  }
 
+  .search-bar {
+    margin-left: 0px;
+    min-width: 330px;
   }
 
   .container {
@@ -125,6 +130,7 @@
     padding: 0px;
     margin: 0px;
     align-items: unset;
+    width: 330px;
   }
 
   .dark-toggle {
@@ -134,6 +140,8 @@
 
   .search-bar {
     margin: 0px;
+    width: 200px;
+    min-width: 295px;
   }
 
   .region-filter {
