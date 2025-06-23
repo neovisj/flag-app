@@ -23,7 +23,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             onClick={() => setDarkMode((prev) => !prev)}
             className="dark-toggle"
           >
-            {darkMode ? "⏾ DARK MODE" : "☀︎ LIGHT MODE"}
+            {darkMode ? "☾ DARK MODE" : "☀︎ LIGHT MODE"}
           </button>
         </div>
       </div>
