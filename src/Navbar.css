@@ -63,13 +63,28 @@
   color: inherit;
 }
 
-@media screen and (max-width:1000px) {
-  h1 {
-    padding: 10px;
+@media screen and (max-width:1224px) {
+ .navbar-content-wrapper {
+  max-width: 850px;
+  height: 100%;
+ }
+}
+
+@media screen and (max-width:925px) {
+  .nav-logo {
+    display: none;
   }
 
  .navbar-content-wrapper {
-  max-width: 700px;
+  max-width: 550px;
+  height: 100%;
+ }
+}
+
+@media screen and (max-width: 678px) {
+
+ .navbar-content-wrapper {
+  max-width: 500px;
   height: 100%;
  }
 }
@@ -95,7 +110,7 @@
   }
 
   .navbar-content-wrapper {
-    margin: 0px 15px ;
+    margin: 0px 35px ;
   }
 }
 

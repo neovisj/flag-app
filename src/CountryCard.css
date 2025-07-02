@@ -49,6 +49,15 @@
     align-items: center;
   }
 
+  @media screen and (max-width: 678px) {
+
+ .country-card {
+  width: 240px;
+  margin: auto;
+ }
+}
+
+
 @media screen and (max-width:500px) {
   .country-card {
     width: 360px;
